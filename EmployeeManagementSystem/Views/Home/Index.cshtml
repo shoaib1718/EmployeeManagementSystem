@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">
+        Employee Management Dashboard
+    </h1>
+
+    <br />
+
+    <div class="card shadow"
+         style="width: 25rem; margin:auto;">
+
+        <div class="card-body">
+
+            <h5 class="card-title">
+                Total Employees
+            </h5>
+
+            <h1 class="text-primary">
+                @ViewBag.TotalEmployees
+            </h1>
+
+            <hr />
+
+            <a asp-controller="Employee"
+               asp-action="Index"
+               class="btn btn-success">
+                View Employees
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
